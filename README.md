@@ -34,7 +34,7 @@ then, start building solution
 
 ![](20150919170241.jpg)
 
-Now, you can use d8.exe or shell.exe to run your javascript code, and it is similar with the console of many browsers, especially Chrome, which is based on the V8. There are some subtle differences between them. For example, you can't use the method of console.log() to print output the result of your code
+Now, you can use d8.exe or shell.exe to run your javascript code, and it is similar with the console of many browsers, especially Chrome, which is based on the V8. There are some subtle differences between them. For example, you can't use the method of **console.log()** to print output the result of your code
 
 ![](20150919170544.jpg)
 
@@ -51,7 +51,7 @@ then, you should import some documents to the project
         #include <readline/readline.h>
         #include <readline/history.h>
 
-![]()
+![](20150920022700.jpg)
 
 # How to get and install the compiler directly
 
@@ -64,7 +64,7 @@ Put **history5.dll** and **readline5.dll** into
 
 # How to use the compiler
 
-You can look up [demo.js]()
+You can look up [demo.js](demo.js)
 
 # Help
 
