@@ -15,26 +15,26 @@ If you can't open or download it, you also can use the mirror which is on the Gi
 
 # How to bulid
 
-First, you should install python environment on your computer, I suggest installing python2.7
+First, you should install python environment on your computer, I suggest installing **python2.7**
 
-then, you should generate project files
+Then, you should generate project files
 
         python build\gyp_v8
 
-if gyp tell you \third_party\icu\icu.gyp not found, you should install some third-party modules( you should install [svn tool](http://tortoisesvn.net/downloads.html) )
+If gyp tell you \third_party\icu\icu.gyp not found, you should install some third-party modules( you should install [svn tool](http://tortoisesvn.net/downloads.html) )
 
         svn co http://src.chromium.org/svn/trunk/deps/third_party/cygwin third_party/cygwin
         svn co https://src.chromium.org/chrome/trunk/deps/third_party/icu46 third_party/icu
 
-if project files generate successfully, you will get all.sln and open it by VS2013
+If project files generate successfully, you will get **all.sln** and open it by **VS2013**
 
 ![](20150919141953.jpg)
 
-then, start building solution
+Then, start building solution
 
 ![](20150919170241.jpg)
 
-Now, you can use d8.exe or shell.exe to run your javascript code, and it is similar with the console of many browsers, especially Chrome, which is based on the V8. There are some subtle differences between them. For example, you can't use the method of **console.log()** to print output the result of your code
+Now, you can use **d8.exe** or **shell.exe** to run your javascript code, and it is similar with the console of many browsers, especially Chrome, which is based on the V8. There are some subtle differences between them. For example, you can't use the method of **console.log()** to print output the result of your code
 
 ![](20150919170544.jpg)
 
@@ -46,7 +46,7 @@ Readline support for the d8 shell, and you must add the optional parameter when 
 
 ![](20150920003252.jpg)
 
-then, you should import some documents to the project
+Then, you should import some documents to the project
 
         #include <readline/readline.h>
         #include <readline/history.h>
@@ -55,7 +55,7 @@ then, you should import some documents to the project
 
 # How to get and install the compiler directly
 
-You need three documents: d8.exe, history5.dll and readline5.dll
+You need three documents: **d8.exe**, **history5.dll** and **readline5.dll**
 
 Put **history5.dll** and **readline5.dll** into 
 
@@ -65,6 +65,8 @@ Put **history5.dll** and **readline5.dll** into
 # How to use the compiler
 
 You can look up [demo.js](demo.js)
+
+        cmd> d8 demo.js < input.in > output.out
 
 # Help
 
